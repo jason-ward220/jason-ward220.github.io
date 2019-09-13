@@ -3,11 +3,86 @@
     
     <head>
         <title>My First Webpage</title>
+        
+        <style>
+            .navbar
+            {
+                background-color:Blue;
+                width: 100%;
+                opacity:1;
+            }
+            .navbar a, moreLinks
+            {
+                color:white;
+                font-size:24px;
+                text-decoration:none;
+                padding:16px;
+                float: left;
+            }
+            .navbar a:hover
+            {
+                background-color:darkBlue;
+                opacity:0.5;
+            }
+            .dropdown-content
+            {
+                display:none;
+            }
+            .moreLinks:hover .dropdown-content
+            {
+                display:block;
+            }
+            .dropdown-content
+            {
+                position:absolute;
+            }
+        </style>
     </head>
     
     <body>
+        
+        <div class="navbar">
+            <a href="https://yahoo.com">Yahoo</a>
+            <a href="https://google.com">Google</a>
+            <a href="https://yahoo.com">Yahoo</a>
+            <div class="dropdown">
+                <div class="moreLinks">More Links</div>
+                <div class="dropdown-content">
+                    <a href="https://www.awseducate.com">AWS Educate</a>
+                    <a href="https://www.collegeboard.org">CollegeBoard</a>
+                </div>
+            </div>
+        </div>
+        
         <h1>My First Heading</h1>
         <p>My first paragraph.</p>
+        <p>My second paragraph.</p>
+        
+        <!--<h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>
+        <h4>Text</h4><br>-->
     </body>
     
 </html>
