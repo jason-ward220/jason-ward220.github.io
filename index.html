@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>repl.it</title>
+        <title>Home</title>
         <style>
             .navbar
             {
+                list-style: none;
                 background-image: linear-gradient(blue, darkBlue);
                 overflow: hidden;
+                padding: 0;
+                margin: 0;
             }
-            .navbar a
+            .navbar a, .dropdown div
             {
+                text-decoration: none;
                 color: white;
                 font-size: 24px;
-                text-decoration: none;
                 padding: 16px;
+                display: inline-block;
+            }
+            .navbar li
+            {
                 float: left;
             }
-            .morelinks
-            {
-                color: white;
-                font-size: 24px;
-                text-decoration: none;
-                padding: 16px;
-            }
-            .navbar a:hover, .morelinks:hover
+            .navbar li:hover
             {
                 background-image: linear-gradient(darkBlue, blue);
-                opacity: 0.5;
+            }
+            .dropdown-content
+            {
+                list-style: none;
+                padding: 0;
+                display: none;
+            }
+            .dropdown-content li
+            {
+                float: none;
             }
             .dropdown:hover .dropdown-content
             {
                 display: block;
             }
-            .dropdown-content
-            {
-                position: absolute;
-                z-index: 1;
-                display: none;
-                background-color: darkblue;
-            }
-            .dropdown
-            {
-                background-image: linear-gradient(blue, darkBlue);
-                color: white;
-                float: left;
-                text-decoration: none;
-                font-size: 24px;
-            }
-            .dropdown-content a
-            {
-                float: none;
-                display: block;
-            }
         </style>
     </head>
     <body>
-        <div class="navbar">
-            <a href="https://www.yahoo.com">Yahoo</a>
-            <a href="https://www.google.com">Google</a>
-            <a href="https://www.yahoo.com">Yahoo</a>
-            <div class="dropdown">
-                <div class="morelinks">More Links</div>
-                <div class="dropdown-content">
-                    <a href="https://www.awseducate.com">AWS Educate</a>
-                    <a href="https://www.collegeboard.org">College Board</a>
-                </div>
-            </div>  
-        </div>
+        <ul class=navbar>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://awseducate.com">AWS Educate</a></li>
+            <li class=dropdown>
+                <div>More Links</div>
+                <ul class=dropdown-content>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h1>Page Title</h1>
+        <blockquote>
+            <p>
+                <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat. Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Amet luctus venenatis lectus magna fringilla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sagittis orci a scelerisque purus semper eget duis. Nulla pharetra diam sit amet nisl suscipit. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem dolor. Tristique senectus et netus et malesuada.</i>
+            </p>
+            <p>
+                <i>Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique. Vulputate mi sit amet mauris. Sodales neque sodales ut etiam sit. Dignissim suspendisse in est ante in. Volutpat commodo sed egestas egestas. Felis donec et odio pellentesque diam. Pharetra vel turpis nunc eget lorem dolor sed viverra. Porta nibh venenatis cras sed felis eget. Aliquam ultrices sagittis orci a. Dignissim diam quis enim lobortis. Aliquet porttitor lacus luctus accumsan. Dignissim convallis aenean et tortor at risus viverra adipiscing at.</i>
+            </p>
+        </blockquote>
+        
     </body>
 </html>
