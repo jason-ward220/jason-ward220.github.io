@@ -1,3 +1,4 @@
+/*Navigation Bar*/
 .navbar
 {
     list-style: none;
@@ -20,7 +21,7 @@
 }
 .navbar li:hover
 {
-    background-image: linear-gradient(darkBlue, blue);
+    background-color: darkBlue;
 }
 .dropdown-content
 {
@@ -41,5 +42,23 @@
 }
 .active
 {
-    background-color: darkBlue;
+    background-image: linear-gradient(darkBlue, blue);
+}
+
+/*Body*/
+table, tr, td
+{
+    background-color: lightGray;
+    padding: 8px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 16px;
+}
+h1, h2, h3, h4, h5, h6, p
+{
+    margin: 16px;
+}
+body
+{
+    margin: 0;
 }
