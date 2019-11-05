@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            #container
+            {
+                position:absolute;
+                top:59px;
+                bottom:0px;
+                left:0px;
+                right:0px;
+                background-color:green;
+            }
+            #leftPane
+            {
+                width:56%;
+                height:100%;
+                float:left;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-color:red;
+            }
+            #rightPane
+            {
+                width:44%;
+                height:100%;
+                float:left;
+                background-color:blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul class=navbar>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+            <li class=dropdown>
+                <div class=active>Projects</div>
+                <ul class=dropdown-content>
+                    <li><a href="textAdventure.html">Text Adventure</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="container">
+            <div id="leftPane">
+            </div>
+            <div id="rightPane">
+            </div>
+        </div>
+
+    </body>
+</html>
