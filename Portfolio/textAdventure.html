@@ -31,6 +31,41 @@
                 float:left;
                 background-color:blue;
             }
+            #storytext
+            {
+                position:absolute;
+                top:0px;
+                bottom:50px;
+                left:56%;
+                right:0px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-color:pink;
+            }
+            #choices
+            {
+                position:absolute;
+                bottom:0px;
+                left:56%;
+                right:0px;
+                height:50px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-color:yellow;
+            }
+            #b1, #b2, #b3, #b4
+            {
+                display:inline-block;
+                background-color:brown;//purple-orange
+                color:white;
+                font-size:16px;
+                padding:10px;
+                margin:5px;
+                border-radius:8px;
+                text-decoration:none;
+            }
         </style>
 
     </head>
@@ -54,6 +89,14 @@
             <div id="leftPane">
             </div>
             <div id="rightPane">
+                <div id="storytext">
+                </div>
+                <div id="choices">
+                    <a id="b1" href="#">Choice 1</a>
+                    <a id="b2" href="#">Choice 2</a>
+                    <a id="b3" href="#">Choice 3</a>
+                    <a id="b4" href="#">Choice 4</a>
+                </div>
             </div>
         </div>
 
