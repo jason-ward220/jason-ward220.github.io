@@ -90,7 +90,7 @@
 
         <div id="container">
             <div id="leftPane">
-                <img id="storyimg" src="images/witch.jpg">
+                <img id="storyimg" src="images/[3]witch.jpg">
             </div>
             <div id="rightPane">
                 <div id="storytext">
@@ -125,8 +125,41 @@
             function intro()
             {
                 pic.src = "images/woods.jpg";
-                ptext1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem dolor. Tristique senectus et netus et malesuada.");
+                ptext1.innerHTML = "Bob is a singer. Bob is tired of paparazzi always following him around.?";
                 ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Attend a normal school as a singer in disguise.";
+                b2.innerHTML = "Don't attend a normal school as a singer in disguise.";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "block";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function happilyEverAfter()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob lives happily ever after.";
+                ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Back to Start";
+                b2.innerHTML = "";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+                //state = "meetWitch";
+            }
+            function part1()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob finds a girl that likes him but she is a bully so Bob doesn’t like her. However, she is tenacious and always follows Bob around. Her name is Cairo.";
+                ptext2.innerHTML = "Does Bob talk to her?";
                 ptext3.innerHTML = "";
                 ptext4.innerHTML = "";
                 b1.innerHTML = "Yes";
@@ -137,24 +170,38 @@
                 b2.style.display = "block";
                 b3.style.display = "none";
                 b4.style.display = "none";
-                state = "meetWitch";
             }
-            function meetWitch();
+            function runFromWitch()
             {
-                pic.src = "images/witch.jpg";
-                ptext1.innerHTML = "Hello, I have a spell to put on you.";
-                ptext2.innerHTML = "What would you like to do?";
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob finds a girl that likes him but she is a bully so Bob doesn’t like her. However, she is tenacious and always follows Bob around. Her name is Cairo.";
+                ptext2.innerHTML = "Does Bob talk to her?";
                 ptext3.innerHTML = "";
                 ptext4.innerHTML = "";
-                b1.innerHTML = "Attack";
-                b2.innerHTML = "Run";
-                b3.innerHTML = "Stay";
+                b1.innerHTML = "Yes";
+                b2.innerHTML = "No";
+                b3.innerHTML = "";
                 b4.innerHTML = "";
                 b1.style.display = "block";
                 b2.style.display = "block";
-                b3.style.display = "block";
+                b3.style.display = "none";
                 b4.style.display = "none";
-                state = "meetWitch";
+            }
+            function stayWithWitch()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob finds a girl that likes him but she is a bully so Bob doesn’t like her. However, she is tenacious and always follows Bob around. Her name is Cairo.";
+                ptext2.innerHTML = "Does Bob talk to her?";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Yes";
+                b2.innerHTML = "No";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "block";
+                b3.style.display = "none";
+                b4.style.display = "none";
             }
 
             //state machine
@@ -165,13 +212,32 @@
                     if(button == 1)
                     {
                         meetWitch();
+                        state = "meetWitch";
                     }
                     else if(button == 2)
                     {
                         //send them somewhere else
                     }
                 }
-                return: false;
+                else if(state == "meetWitch")
+                {
+                    if(button == 1)
+                    {
+                        attackWitch();
+                        state = "attackWitch";
+                    }
+                    else if(button == 2)
+                    {
+                        runFromWitch();
+                        state = "runFromWitch";
+                    }
+                    else if(button == 3)
+                    {
+                        stayWithWitch();
+                        state = "stayWithWitch";
+                    }
+                }
+                return false;
             }
         </script>
 
