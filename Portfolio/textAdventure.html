@@ -171,12 +171,28 @@
                 b3.style.display = "none";
                 b4.style.display = "none";
             }
-            function runFromWitch()
+            function part2()
             {
                 pic.src = "images/[3]witch.jpg";
-                ptext1.innerHTML = "Bob finds a girl that likes him but she is a bully so Bob doesn’t like her. However, she is tenacious and always follows Bob around. Her name is Cairo.";
-                ptext2.innerHTML = "Does Bob talk to her?";
+                ptext1.innerHTML = "Bob tells her that he does not like her. ";
+                ptext2.innerHTML = "";
                 ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Continue";
+                b2.innerHTML = "";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part6()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob does not talk to her.";
+                ptext2.innerHTML = "The bully follows Bob but Bob keeps ignoring her.";
+                ptext3.innerHTML = "Stay with the bully and be annoyed? ";
                 ptext4.innerHTML = "";
                 b1.innerHTML = "Yes";
                 b2.innerHTML = "No";
@@ -187,12 +203,12 @@
                 b3.style.display = "none";
                 b4.style.display = "none";
             }
-            function stayWithWitch()
+            function part3()
             {
                 pic.src = "images/[3]witch.jpg";
-                ptext1.innerHTML = "Bob finds a girl that likes him but she is a bully so Bob doesn’t like her. However, she is tenacious and always follows Bob around. Her name is Cairo.";
-                ptext2.innerHTML = "Does Bob talk to her?";
-                ptext3.innerHTML = "";
+                ptext1.innerHTML = "[3] Then one day this one girl shows up and Bob likes her but she doesn’t know what Bob feels about her. Her name is Jhoana.";
+                ptext2.innerHTML = "The bully follows Bob but Bob keeps ignoring her.";
+                ptext3.innerHTML = "Stay with the bully and be annoyed? ";
                 ptext4.innerHTML = "";
                 b1.innerHTML = "Yes";
                 b2.innerHTML = "No";
@@ -211,30 +227,34 @@
                 {
                     if(button == 1)
                     {
-                        meetWitch();
-                        state = "meetWitch";
+                        part1();
+                        state = "part1";
                     }
                     else if(button == 2)
                     {
-                        //send them somewhere else
+                        happilyEverAfter();
+                        state = "happilyEverAfter";
                     }
                 }
-                else if(state == "meetWitch")
+                else if(state == "happilyEverAfter")
                 {
                     if(button == 1)
                     {
-                        attackWitch();
-                        state = "attackWitch";
+                        intro();
+                        state = "intro";
+                    }
+                }
+                else if(state == "part1")
+                {
+                    if(button == 1)
+                    {
+                        part2();
+                        state = "part2";
                     }
                     else if(button == 2)
                     {
-                        runFromWitch();
-                        state = "runFromWitch";
-                    }
-                    else if(button == 3)
-                    {
-                        stayWithWitch();
-                        state = "stayWithWitch";
+                        part6();
+                        state = "part6";
                     }
                 }
                 return false;
