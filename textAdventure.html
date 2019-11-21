@@ -125,7 +125,7 @@
             function intro()
             {
                 pic.src = "images/woods.jpg";
-                ptext1.innerHTML = "Bob is a singer. Bob is tired of paparazzi always following him around.?";
+                ptext1.innerHTML = "Bob is a singer. Bob is tired of paparazzi always following him around.";
                 ptext2.innerHTML = "";
                 ptext3.innerHTML = "";
                 ptext4.innerHTML = "";
@@ -138,7 +138,7 @@
                 b3.style.display = "none";
                 b4.style.display = "none";
             }
-            function happilyEverAfter()
+            function part7()
             {
                 pic.src = "images/[3]witch.jpg";
                 ptext1.innerHTML = "Bob lives happily ever after.";
@@ -207,7 +207,55 @@
             {
                 pic.src = "images/[3]witch.jpg";
                 ptext1.innerHTML = "[3] Then one day this one girl shows up and Bob likes her but she doesn’t know what Bob feels about her. Her name is Jhoana.";
-                ptext2.innerHTML = "The bully follows Bob but Bob keeps ignoring her.";
+                ptext2.innerHTML = "Bob is new at school and wants people to like him. Cairo is in a group of popular kids and Bob knows that if he makes friends with her, he could be friends with anyone.  However, Bob does not think he wants to be friends with her.";
+                ptext3.innerHTML = "However, Jhoana is an outcast and after talking to her for awhile Bob realizes that she is poor. If Bob makes friends with her Bob will also have no friends but they will have each other, and Bob can already tell that they will like each other eventually.  ";
+                ptext4.innerHTML = "Which person does Bob attempt to make friends with?";
+                b1.innerHTML = "Cairo";
+                b2.innerHTML = "Jhoana";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "block";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part4()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "[4] Because Bob values happiness over money, Bob chooses to reject Cairo and be friends with Jhoana. Cairo is jealous that Bob choses Jhoana over her so she makes it her mission to make Bob’s life miserable for the rest of the time Bob is at their school. Bob knows he only has one choice: Get rid of her. ";
+                ptext2.innerHTML = "Bob formulates a plan.";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Cairo graffities the school and blames it on Bob. Bob proves his innocence and she gets expelled. ";
+                b2.innerHTML = "Bob finds her in a dark, deserted alley while she is walking home. Bob cuts her hair into a masculine haircut. She is so embarrassed that she drops out of school.";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "block";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part5()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "[5] Bob never sees her again. Bob and Jhoana become the most popular and well-liked students at the school. They get married years later.";
+                ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Continue";
+                b2.innerHTML = "";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part6()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob does not talk to her.";
+                ptext2.innerHTML = "The bully follows Bob but Bob keeps ignoring her";
                 ptext3.innerHTML = "Stay with the bully and be annoyed? ";
                 ptext4.innerHTML = "";
                 b1.innerHTML = "Yes";
@@ -219,7 +267,54 @@
                 b3.style.display = "none";
                 b4.style.display = "none";
             }
-
+            function part10()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob is popular but miserable everyday.";
+                ptext2.innerHTML = "Does Bob stay friends with Cairo or dump her for Jhoana?";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Cairo";
+                b2.innerHTML = "Jhoana";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "block";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part8()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob has many friends but is are unhappy.";
+                ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Back to Start";
+                b2.innerHTML = "";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
+            function part9()
+            {
+                pic.src = "images/[3]witch.jpg";
+                ptext1.innerHTML = "Bob chose happiness over money and popularity. Bob and Jhoana live happily ever after.";
+                ptext2.innerHTML = "";
+                ptext3.innerHTML = "";
+                ptext4.innerHTML = "";
+                b1.innerHTML = "Back to Start";
+                b2.innerHTML = "";
+                b3.innerHTML = "";
+                b4.innerHTML = "";
+                b1.style.display = "block";
+                b2.style.display = "none";
+                b3.style.display = "none";
+                b4.style.display = "none";
+            }
             //state machine
             function bclick(button)
             {
@@ -232,11 +327,11 @@
                     }
                     else if(button == 2)
                     {
-                        happilyEverAfter();
-                        state = "happilyEverAfter";
+                        part7();
+                        state = "part7";
                     }
                 }
-                else if(state == "happilyEverAfter")
+                else if(state == "part7")
                 {
                     if(button == 1)
                     {
@@ -255,6 +350,64 @@
                     {
                         part6();
                         state = "part6";
+                    }
+                }
+                else if(state == "part2")
+                {
+                    if(button == 1)
+                    {
+                        part3();
+                        state = "part3";
+                    }
+                }
+                else if(state == "part3")
+                {
+                    if(button == 1)
+                    {
+                        part10();
+                        state = "part10";
+                    }
+                    else if(button == 2)
+                    {
+                        part4();
+                        state = "part4"
+                    }
+                }
+                else if(state == "part4")
+                {
+                    if(button == 1 || button == 2)
+                    {
+                        part5();
+                        state = "part5";
+                    }
+                }
+                else if(state == "part5")
+                {
+                    if(button == 1)
+                    {
+                        part7();
+                        state = "part7";
+                    }
+                }
+                else if(state == "part6" || state == "part 10")
+                {
+                    if(button == 1)
+                    {
+                        part8();
+                        state = "part8";
+                    }
+                    else if(button == 2)
+                    {
+                        part9();
+                        state = "part9";
+                    }
+                }
+                else if(state == "part8" || state == "part9")
+                {
+                    if(button == 1)
+                    {
+                        intro();
+                        state = "intro";
                     }
                 }
                 return false;
