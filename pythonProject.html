@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+            #h1{
+                z-index: 1;
+            }
+            #container
+            {
+                position:absolute;
+                top:59px;
+                bottom:0px;
+                left:0px;
+                right:0px;
+                background-color:white;
+            }
+            #leftPane
+            {
+                width:100%;
+                height:48%;
+                float:left;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            #rightPane
+            {
+                width:100%;
+                height:48%;
+                float:left;
+            }
+            #storytext
+            {
+                position:absolute;
+                top:0px;
+                bottom:200px;
+                left:56%;
+                right:0px;
+                /*display:flex;   //comment/uncomment for collumns instead of paragraphs
+                align-items:center;*/
+                justify-content:center;
+            }
+            #choices
+            {
+                position:absolute;
+                bottom:0px;
+                left:56%;
+                right:0px;
+                height:225px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-color:white;
+            }
+            #b1, #b2, #b3, #b4
+            {
+                display:inline-block;
+                background-color:#000000;//purple-orange
+                //background:linear-gradient(white,black);
+                //background: radial-gradient(rgba(0,0,224,1), rgba(0,0,0,0.1));
+                color:white;
+                font-size:16px;
+                padding:10px;
+                margin:5px;
+                border-radius:8px;
+                text-decoration:none;
+            }
+            p
+            {
+                color:black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul class=navbar>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contactMe.html">Contact Me</a></li>
+            <li class=dropdown>
+                <div class=active>Projects</div>
+                <ul class=dropdown-content>
+                    <li><a href="textAdventure.html">Text Adventure</a></li>
+                    <li><a href="pythonProject.html">Python Project</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1>Python Project</h1>
+        <div id="container">
+            <div id="leftPane">
+            </div>
+            <div id="rightPane">
+                <iframe height="400px" width="100%" src="https://repl.it/@JasonWard2/PythonProject?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            </div>
+
+    </body>
+</html>
