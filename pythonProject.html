@@ -17,10 +17,26 @@
                 right:0px;
                 background-color:white;
             }
-            #leftPane
+            #topPane
             {
                 width:100%;
-                height:48%;
+                height:50%;
+                float:left;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            #bottomPane
+            {
+                width:100%;
+                height:50%;
+                float:left;
+                background-color: black;
+            }
+            #leftPane
+            {
+                width:50%;
+                height:100%;
                 float:left;
                 display:flex;
                 align-items:center;
@@ -28,49 +44,9 @@
             }
             #rightPane
             {
-                width:100%;
-                height:48%;
+                width:50%;
+                height:100%;
                 float:left;
-            }
-            #storytext
-            {
-                position:absolute;
-                top:0px;
-                bottom:200px;
-                left:56%;
-                right:0px;
-                /*display:flex;   //comment/uncomment for collumns instead of paragraphs
-                align-items:center;*/
-                justify-content:center;
-            }
-            #choices
-            {
-                position:absolute;
-                bottom:0px;
-                left:56%;
-                right:0px;
-                height:225px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                background-color:white;
-            }
-            #b1, #b2, #b3, #b4
-            {
-                display:inline-block;
-                background-color:#000000;//purple-orange
-                //background:linear-gradient(white,black);
-                //background: radial-gradient(rgba(0,0,224,1), rgba(0,0,0,0.1));
-                color:white;
-                font-size:16px;
-                padding:10px;
-                margin:5px;
-                border-radius:8px;
-                text-decoration:none;
-            }
-            p
-            {
-                color:black;
             }
         </style>
 
@@ -93,10 +69,26 @@
 
         <h1>Python Project</h1>
         <div id="container">
-            <div id="leftPane">
+            <div id="topPane">
+                <div id="leftPane">
+                </div>
+                <div id="rightPane">
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>
+                                    Write-Up
+                                </h2>
+                                <p>
+                                    I experienced difficulties while developing my Python Project, though I resolved them and incorporated them as part of an incremental and iterative development. My first difficulty was when I tried to call a function inside of another function. I had personally written both functions but I had forgotten to pass in the variables inside of the parentheses. My groupmates reminded me and this problem was resolved. Another problem I encountered while coding my Python Project was telling the user that they had won the game and breaking the while loop after the user guessed all of the correct letters. Our code could tell when the user had lost but not when they had won. We eventually solved this issue by assigning the guesses their own variable and comparing it to the answer. I realized that we were unintentionally making the code unnecessarily complicated and once we simplified it, it worked much better. As part of an incremental and iterative development, I experienced difficulties while developing my Python Project, though as a group we worked through and resolved them.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div id="rightPane">
-                <iframe height="400px" width="100%" src="https://repl.it/@JasonWard2/PythonProject?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            <div id="bottomPane">
+                <iframe height="100%" width="100%" src="https://repl.it/@JasonWard2/PythonProject?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
             </div>
 
     </body>
